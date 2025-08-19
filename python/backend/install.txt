@@ -1,0 +1,11 @@
+apt-get install python3.12-venv -y
+python3 -m venv venv
+venv\Scripts\activate
+
+# install dependencies - part 1
+pip install fastapi uvicorn python-docx reportlab
+uvicorn main:app --reload
+
+# install dependencies - part 2
+pip install fastapi uvicorn python-docx reportlab
+
